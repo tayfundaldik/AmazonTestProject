@@ -1,0 +1,12 @@
+2024-05-17 12:49:47,485 INFO  [Log] search_product() Passed! 
+2024-05-17 12:49:50,877 INFO  [Log] select_product() Passed! 
+2024-05-17 12:49:52,319 INFO  [Log] add_product() Passed! 
+2024-05-17 12:49:53,139 INFO  [Log] go_to_card() Passed! 
+2024-05-18 22:32:33,075 INFO  [Log] search_product() Passed! 
+2024-05-18 22:32:36,379 INFO  [Log] select_product() Passed! 
+2024-05-18 22:32:37,672 INFO  [Log] add_product() Passed! 
+2024-05-18 22:32:38,377 INFO  [Log] go_to_card() Passed! 
+2024-05-18 22:32:52,873 INFO  [Log] search_product() Passed! 
+2024-05-18 22:32:56,463 INFO  [Log] select_product() Passed! 
+2024-05-18 22:32:57,904 INFO  [Log] add_product() Passed! 
+2024-05-18 22:32:58,965 INFO  [Log] go_to_card() Passed! 
