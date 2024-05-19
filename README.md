@@ -37,5 +37,36 @@ BasePage class is the basic class of all classes. That class provides basic acti
     public boolean isDisplayed(By locator){
         return find(locator).isDisplayed();
     }
+### CardPage Class
+CardPage class checks the cart if the product is added.
+    // Check the cart if the product is added
+    public boolean isProductOnCard() {
+      return getCardProducts().size()>0;
+    }
+    // Get all the products from the cart and add them into a list
+    private List<WebElement> getCardProducts(){
+        return findAll(itemLocator);
+    }
+### HomePage Class
+HomePage class has operations that user can do at the Amazon home page such as going to cart page, accept cookies etc.
+ //Check the product count amount
+    public boolean isProductCountIncreased() {
+        return getNumberofItems() > 0;
+    }
 
+    // Click the go to cart button and go to the cart page
+    public void goToCard() {
+        clickAnObject(cardContainerLocator);
+    }
+    // Get the number of products from the cart page
+    private int getNumberofItems(){
+        String count =  find(cardCountLocator).getText();
+        return Integer.parseInt(count);
+    }
+
+    // Click the accept cookies button
+    public void acceptCookies(){
+        if (isDisplayed(acceptCookiesLocator)){
+            clickAnObject(acceptCookiesLocator);
+        }
 
