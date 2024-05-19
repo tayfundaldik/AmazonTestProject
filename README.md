@@ -14,7 +14,7 @@ Scenario Steps:<br/>
 <br/>
 ### BasePage Class
 BasePage class is the basic class of all classes. That class provides basic actions, such as finding an element and clicking an element, which can be used by other classes in the program.
-
+ ```java
     WebDriver driver;
     
     //Get an element
@@ -37,9 +37,10 @@ BasePage class is the basic class of all classes. That class provides basic acti
     public boolean isDisplayed(By locator){
         return find(locator).isDisplayed();
     }
+ ```
 ### CardPage Class
 CardPage class checks the cart if the product is added.
-    
+ ```java
     // Check the cart if the product is added
     public boolean isProductOnCard() {
       return getCardProducts().size()>0;
@@ -47,7 +48,8 @@ CardPage class checks the cart if the product is added.
     // Get all the products from the cart and add them into a list
     private List<WebElement> getCardProducts(){
         return findAll(itemLocator);
-    }
+    } 
+```
 ### HomePage Class
 HomePage class has operations that user can do at the Amazon home page such as going to cart page, accept cookies etc.
  ```java
