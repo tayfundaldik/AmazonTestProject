@@ -39,6 +39,7 @@ BasePage class is the basic class of all classes. That class provides basic acti
     }
 ### CardPage Class
 CardPage class checks the cart if the product is added.
+    
     // Check the cart if the product is added
     public boolean isProductOnCard() {
       return getCardProducts().size()>0;
@@ -49,7 +50,8 @@ CardPage class checks the cart if the product is added.
     }
 ### HomePage Class
 HomePage class has operations that user can do at the Amazon home page such as going to cart page, accept cookies etc.
- //Check the product count amount
+ 
+     //Check the product count amount
     public boolean isProductCountIncreased() {
         return getNumberofItems() > 0;
     }
