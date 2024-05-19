@@ -14,7 +14,7 @@ Scenario Steps:
 
 ### BasePage Class
 BasePage class is the basic class of all classes. That class provides basic actions, such as finding an element and clicking an element, which can be used by other classes in the program.
-'''java
+
 public class BasePage {
     WebDriver driver;
 
@@ -42,4 +42,4 @@ public class BasePage {
         return find(locator).isDisplayed();
     }
 }
-'''
+
