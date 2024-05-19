@@ -13,7 +13,7 @@ Scenario Steps:<br/>
 5- User clicks "Go to Cart" button and goes to cart page.<br/>
 <br/>
 ### BasePage Class
-BasePage class is the basic class of all classes. That class provides basic actions, such as finding an element and clicking an element, which can be used by other classes in the program.<br/>
+BasePage class is the basic class of all classes. That class provides basic actions, such as finding an element and clicking an element, which can be used by other classes in the program.
 
     WebDriver driver;
     
