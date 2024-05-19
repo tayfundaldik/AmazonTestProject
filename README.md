@@ -1,6 +1,6 @@
 ![Amazon_logo](https://github.com/tayfundaldik/AmazonTestProject/assets/79011413/ed891787-3fe2-4315-b5de-8c0ac2d3ef21)
 
-# AmazonTestProject
+# Amazon Test Project
 
 ## Introduction
 This project tests a scenario where a user checks the products in their cart on the Amazon website.<br/><br/>
@@ -50,7 +50,7 @@ CardPage class checks the cart if the product is added.
     }
 ### HomePage Class
 HomePage class has operations that user can do at the Amazon home page such as going to cart page, accept cookies etc.
- 
+ ```java
      //Check the product count amount
     public boolean isProductCountIncreased() {
         return getNumberofItems() > 0;
@@ -71,4 +71,4 @@ HomePage class has operations that user can do at the Amazon home page such as g
         if (isDisplayed(acceptCookiesLocator)){
             clickAnObject(acceptCookiesLocator);
         }
-
+```
