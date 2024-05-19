@@ -3,8 +3,8 @@
 # AmazonTestProject
 
 ## Introduction
-This project tests a scenario where a user checks the products in their cart on the Amazon website.<br/>
-<br/>
+This project tests a scenario where a user checks the products in their cart on the Amazon website.<br/><br/>
+
 Scenario Steps:<br/>
 1- User goes to "https://www.amazon.com.tr/".<br/>
 2- User types a product name into the search box and clicks the search button.<br/>
