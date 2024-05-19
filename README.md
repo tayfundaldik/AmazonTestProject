@@ -3,15 +3,15 @@
 # AmazonTestProject
 
 ## Introduction
-This project tests a scenario where a user checks the products in their cart on the Amazon website.
-
-Scenario Steps:
-1- User goes to "https://www.amazon.com.tr/".
-2- User types a product name into the search box and clicks the search button.
-3- User clicks on a product.
-4- User adds product to the cart.
-5- User clicks "Go to Cart" button and goes to cart page.
-
+This project tests a scenario where a user checks the products in their cart on the Amazon website.<br/>
+<br/>
+Scenario Steps:<br/>
+1- User goes to "https://www.amazon.com.tr/".<br/>
+2- User types a product name into the search box and clicks the search button.<br/>
+3- User clicks on a product.<br/>
+4- User adds product to the cart.<br/>
+5- User clicks "Go to Cart" button and goes to cart page.<br/>
+<br/>
 ### BasePage Class
 BasePage class is the basic class of all classes. That class provides basic actions, such as finding an element and clicking an element, which can be used by other classes in the program.
 
