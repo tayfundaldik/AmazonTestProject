@@ -1,4 +1,4 @@
-![[Amazon_logo](https://github.com/tayfundaldik/AmazonTestProject/assets/79011413/ed891787-3fe2-4315-b5de-8c0ac2d3ef21)](https://m.media-amazon.com/images/G/41/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_tr-main._CB436417590_.png)
+![[Amazon_logo](https://m.media-amazon.com/images/G/41/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_tr-main._CB436417590_.png)
 
 # Amazon Test Project
 
