@@ -15,9 +15,7 @@ Scenario Steps:<br/>
 ### BasePage Class
 BasePage class is the basic class of all classes. That class provides basic actions, such as finding an element and clicking an element, which can be used by other classes in the program.
  ```java
-    WebDriver driver;
-    
-    //Get an element
+        //Get an element
     public WebElement find(By locator){
         return driver.findElement(locator);
     }
@@ -73,4 +71,65 @@ HomePage class has operations that user can do at the Amazon home page such as g
         if (isDisplayed(acceptCookiesLocator)){
             clickAnObject(acceptCookiesLocator);
         }
+```
+### ProductDetailPage Class
+ProductDetailPage class controls and checks the product details page that is displayed when a user clicks on a product in the search results page.
+```java
+    // Check the page if it is selected product's page
+    public boolean isProductDetailPage() {
+        return isDisplayed(addToCardBtnLocator);
+    }
+    // Add product to cart
+    public void addToCard() {
+        clickAnObject(addToCardBtnLocator);
+    }
+```
+### ProductsPage Class
+ProductPage class has controls and checks the search results page that is displayed when user searchs for a product.
+```java
+    // Check the page if it is searched product's page
+    public boolean isProductPage(){
+        return isDisplayed(shippingOptionLocator);
+    }
+    // Select a product
+    public void selectProduct(int i) {
+        products().get(i).click();
+    }
+    // Get all the elements from the page and add them into a list
+    private List<WebElement> products(){
+        return findAll(productNameLocator);
+    }
+```
+### Test_Add_to_Card Test Class
+Test_Add_to_Card test class tests the scenario where a user wants to add a product to the cart and checks if the product is successfully added.
+```java
+    // Accept cookies, enter a product name to search box and check the page if it is the searched product page
+    @Test
+    @Order(1)
+    public void search_product(){
+        homePage.acceptCookies();
+        homePage.searchBox().search("Laptop");
+        Assertions.assertTrue(productsPage.isProductPage(), "Not on Products Page");
+    }
+    // Select second product on the page and check the page if it is the selected product page
+    @Test
+    @Order(2)
+    public void select_product(){
+        productsPage.selectProduct(1);
+        Assertions.assertTrue(productDetailPage.isProductDetailPage(),"Not on Product Details Page");
+    }
+    // Add product to card and check the cart count amount
+    @Test
+    @Order(3)
+    public void add_product(){
+        productDetailPage.addToCard();
+        Assertions.assertTrue(homePage.isProductCountIncreased(), "Product count is not increased");
+    }
+    // Go to cart and check the cart if the product is added
+    @Test
+    @Order(4)
+    public void go_to_card(){
+        homePage.goToCard();
+        Assertions.assertTrue(cardPage.isProductOnCard(), "Product is not added to the card");
+    }
 ```
