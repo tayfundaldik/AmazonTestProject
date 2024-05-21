@@ -1,4 +1,5 @@
-![https://m.media-amazon.com/images/G/41/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_tr-main._CB436417590_.png]
+
+![amazon_dkblue_noto_email_v2016_tr-main _CB436417590_](https://github.com/tayfundaldik/AmazonTestProject/assets/79011413/72746b3c-b052-4e19-a777-5ead555800b4)
 
 # Amazon Test Project
 
